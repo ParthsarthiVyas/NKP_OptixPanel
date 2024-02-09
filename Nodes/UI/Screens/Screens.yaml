@@ -1,0 +1,12 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- File: Welcome/Welcome.yaml
+- File: Main_Menu/Main_Menu.yaml
+- File: Automode/Automode.yaml
+- File: Manualmode/Manualmode.yaml
+- File: Alarm_History/Alarm_History.yaml
+- File: Calibration/Calibration.yaml
+- File: I_O_Screen_Station_1/I_O_Screen_Station_1.yaml
+- File: I_O_Screen_Station_2/I_O_Screen_Station_2.yaml
+- File: Data_Setup/Data_Setup.yaml
