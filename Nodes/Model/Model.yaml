@@ -1,2 +1,5 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- File: I_O_Screen/I_O_Screen.yaml
+- File: DataSetup/DataSetup.yaml

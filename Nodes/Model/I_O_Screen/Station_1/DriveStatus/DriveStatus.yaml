@@ -1,0 +1,35 @@
+Name: DriveStatus
+Type: FolderType
+Children:
+- Name: ClearFaultMainMotorDrive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: ClearFaultConveyorMotorDrive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: ClearFaultSpinningMotor1Drive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: ClearFaultSpinningMotor2Drive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: MainMotorFault
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: ConveyorMotorFault
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: SpinningMotor1Fault
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: SpinningMotor2Fault
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0

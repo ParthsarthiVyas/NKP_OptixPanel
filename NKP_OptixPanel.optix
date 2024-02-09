@@ -74,15 +74,15 @@ Project:
    Module: FTOptix.System.Net
    Version: 2.0
  Statistics:
-  TotalNodeCount: 17338
-  Objects: 2466
+  TotalNodeCount: 18272
+  Objects: 2648
   ObjectTypes: 96
-  Variables: 14766
+  Variables: 15518
   VariableTypes: 0
   DataTypes: 0
   Methods: 10
   References: 42
   ReferenceTypes: 0
-  Files: 37
+  Files: 59
  Nodes:
  - File: Nodes/NKP_OptixPanel.yaml
