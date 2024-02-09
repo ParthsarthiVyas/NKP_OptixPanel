@@ -1310,7 +1310,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X0"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -1446,7 +1446,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X5"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -1572,7 +1572,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X1"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -1698,7 +1698,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X6"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -1723,12 +1723,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
+        Value: 1.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
+        Value: 3.0
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -1824,7 +1824,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X2"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -1950,7 +1950,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X7"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -2076,7 +2076,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X3"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -2202,7 +2202,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X8"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -2328,7 +2328,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X4"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -2454,7 +2454,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X9"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -2643,7 +2643,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X10"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -2764,7 +2764,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X15"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -2885,7 +2885,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X11"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3006,7 +3006,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X16"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3127,7 +3127,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X12"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3248,7 +3248,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X17"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3369,7 +3369,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X13"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3490,7 +3490,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X18"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3611,7 +3611,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X14"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3732,7 +3732,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X19"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -3916,7 +3916,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X20"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4037,7 +4037,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X25"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4158,7 +4158,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X21"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4279,7 +4279,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X26"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4400,7 +4400,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X22"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4493,7 +4493,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 178.0
+      Value: 179.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -4521,7 +4521,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X27"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4642,7 +4642,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X23"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4763,7 +4763,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/X24"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4947,7 +4947,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor1"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5068,7 +5068,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor6"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5189,7 +5189,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor2"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5310,7 +5310,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor7"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5431,7 +5431,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor3"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5552,7 +5552,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor8"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5673,7 +5673,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor4"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5794,7 +5794,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor9"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5915,7 +5915,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor5"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6036,7 +6036,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor10"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6220,7 +6220,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor11"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6341,7 +6341,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor16"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6462,7 +6462,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor12"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6583,7 +6583,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor17"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6704,7 +6704,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor13"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6825,7 +6825,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor18"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6946,7 +6946,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor14"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7067,7 +7067,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor19"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7188,7 +7188,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor15"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7309,7 +7309,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor20"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7493,7 +7493,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/InputStatus/RejectionSensor21"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7677,7 +7677,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y0"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7813,7 +7813,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y5"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7939,7 +7939,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y1"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8065,7 +8065,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y6"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8191,7 +8191,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y2"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8317,7 +8317,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y7"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8443,7 +8443,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y3"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8569,7 +8569,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y8"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8695,7 +8695,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y4"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8821,7 +8821,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y9"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8971,7 +8971,6 @@ Children:
     - Name: BorderThickness
       Type: BaseDataVariableType
       DataType: Size
-      ModellingRule: Optional
       Value: 1.0
     - Name: LeftMargin
       Type: BaseVariableType
@@ -9010,7 +9009,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y10"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9146,7 +9145,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y15"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9272,7 +9271,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y11"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9398,7 +9397,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y16"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9524,7 +9523,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y12"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9650,7 +9649,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y17"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9776,7 +9775,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y13"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9902,7 +9901,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y18"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10028,7 +10027,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y14"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10154,7 +10153,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/OutputStatus/Y19"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10430,7 +10429,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/SpinningMotor1Fault"
           - Name: Pairs
             Type: BaseObjectType
             Children:
@@ -10841,7 +10840,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/SpinningMotor2Fault"
           - Name: Pairs
             Type: BaseObjectType
             Children:
@@ -11252,7 +11251,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/ConveyorMotorFault"
           - Name: Pairs
             Type: BaseObjectType
             Children:
@@ -11608,7 +11607,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/MainMotorFault"
           - Name: Pairs
             Type: BaseObjectType
             Children:
@@ -12234,6 +12233,17 @@ Children:
       DataType: Boolean
       AccessLevel: Read
       Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/ClearFaultMainMotorDrive"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -12267,6 +12277,17 @@ Children:
       DataType: Boolean
       AccessLevel: Read
       Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/ClearFaultConveyorMotorDrive"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -12300,6 +12321,17 @@ Children:
       DataType: Boolean
       AccessLevel: Read
       Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/ClearFaultSpinningMotor1Drive"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -12333,6 +12365,17 @@ Children:
       DataType: Boolean
       AccessLevel: Read
       Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/I_O_Screen/Station_1/DriveStatus/ClearFaultSpinningMotor2Drive"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText

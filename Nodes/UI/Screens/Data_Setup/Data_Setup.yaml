@@ -1217,6 +1217,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/TimerSetting/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -1247,6 +1258,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: Minimum vail at off delay
     Type: TextBox
     Children:
@@ -1254,6 +1270,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/TimerSetting/Variable2"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -1279,6 +1306,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: No tray machine stop delay
     Type: TextBox
     Children:
@@ -1286,6 +1318,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/TimerSetting/Variable3"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -1311,6 +1354,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: Label4
     Type: Label
     Children:
@@ -1845,6 +1893,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/PressureSetup/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -1885,6 +1944,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 100.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: 'Pressure Setup Station-1'
     Type: Label
     Children:
@@ -2157,6 +2221,95 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 0.0
+    - Name: MomentaryButton1
+      Type: MomentaryButton
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/FactorySetting/Load"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 1
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Load"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 706.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 350.0
+      - Name: MaxHoldTime
+        Type: BaseDataVariableType
+        DataType: Duration
+        ModellingRule: Optional
+        Value: "0:00:00:3.0000000"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 700
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 84.0
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/FactorySetting/Load"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#1aeb00"
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#0a5101"
+      - Name: MinHoldTime
+        Type: BaseDataVariableType
+        DataType: Duration
+        ModellingRule: Optional
+        Value: "0:00:00:1.0000000"
   - Name: Label1
     Type: Label
     Children:
@@ -2212,6 +2365,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/FactorySetting/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -2242,6 +2406,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: 'Factory Setting Station-1'
     Type: Label
     Children:
@@ -2444,6 +2613,22 @@ Children:
     - Name: Panels
       Type: BaseObjectType
       Children:
+      - Name: Panel3
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Vial_Rejection_S1_3"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel1
         Type: NavigationPanelItem
         Children:
@@ -2471,22 +2656,6 @@ Children:
           Type: NodePointer
           DataType: NodeId
           Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Vial_Rejection_S1_2"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel3
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Vial_Rejection_S1_3"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -3065,7 +3234,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable3"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3100,8 +3269,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable3"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -3112,6 +3306,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable3"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: 2 for spare provision
     Type: ToggleButton
     Children:
@@ -3136,7 +3405,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable4"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3171,13 +3440,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable4"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable4"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton3
     Type: ToggleButton
     Children:
@@ -3202,7 +3571,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable5"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3237,13 +3606,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable5"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable5"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton4
     Type: ToggleButton
     Children:
@@ -3268,7 +3737,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable6"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3303,13 +3772,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable6"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable6"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
 - Name: Vial_Rejection_S1_2
   Id: g=584a191b75a266d5e1c9404d9d5987ea
   Supertype: Panel
@@ -3720,7 +4289,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable7"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3755,8 +4324,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable7"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -3767,6 +4361,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable7"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: 2 for spare provision
     Type: ToggleButton
     Children:
@@ -3791,7 +4460,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable8"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3826,13 +4495,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable8"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable8"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton3
     Type: ToggleButton
     Children:
@@ -3857,7 +4626,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable9"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3892,13 +4661,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable9"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable9"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton4
     Type: ToggleButton
     Children:
@@ -3923,7 +4792,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable10"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -3958,13 +4827,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable10"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable10"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label6
     Type: Label
     Children:
@@ -4303,6 +5272,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -4343,6 +5323,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 100.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: rejection step full limit
     Type: TextBox
     Children:
@@ -4350,6 +5335,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/VialRejection/Variable2"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -4390,6 +5386,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 140.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: Label3
     Type: Label
     Children:
@@ -4651,7 +5652,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/NoVialAtInfeed"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -4681,8 +5682,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/NoVialAtInfeed"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -4703,6 +5729,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/NoVialAtInfeed"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label1
     Type: Label
     Children:
@@ -4790,7 +5891,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/DoorSensor"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -4820,8 +5921,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/DoorSensor"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -4842,6 +5968,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/DoorSensor"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label2
     Type: Label
     Children:
@@ -4929,7 +6130,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/NoTrayMachineShop"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -4959,8 +6160,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/NoTrayMachineShop"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -4981,6 +6207,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/NoTrayMachineShop"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label3
     Type: Label
     Children:
@@ -5068,7 +6369,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/FootSwtich"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -5098,8 +6399,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/FootSwtich"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -5120,6 +6446,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/FootSwtich"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label4
     Type: Label
     Children:
@@ -5202,7 +6603,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/RejectionSystem"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -5237,8 +6638,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/RejectionSystem"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -5249,6 +6675,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_1/SystemSetting/RejectionSystem"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: TopMargin
     Type: BaseVariableType
     DataType: Size
@@ -5487,8 +6988,10 @@ Children:
       Value: 3
     - Class: Reference
       Target: ns=5;i=1183
+      Direction: Forward
     - Class: Reference
       Target: ns=5;i=1181
+      Direction: Forward
 - Name: System_setup_S1_3
   Id: g=86e832ba42ba375810fa1243bb8217e8
   Supertype: Panel
@@ -7366,6 +8869,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/TimerSetting/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -7396,6 +8910,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: Minimum vail at off delay
     Type: TextBox
     Children:
@@ -7403,6 +8922,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/TimerSetting/Variable2"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -7428,6 +8958,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: No tray machine stop delay
     Type: TextBox
     Children:
@@ -7435,6 +8970,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/TimerSetting/Variable3"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -7460,6 +9006,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: Label4
     Type: Label
     Children:
@@ -7994,6 +9545,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/PressureSetup/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -8034,6 +9596,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 100.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: 'Pressure Setup Station-1'
     Type: Label
     Children:
@@ -8361,6 +9928,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/FactorySetting/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -8391,6 +9969,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: 'Factory Setting Station-1'
     Type: Label
     Children:
@@ -8562,6 +10145,95 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 50.0
+  - Name: MomentaryButton1
+    Type: MomentaryButton
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/FactorySetting/Load"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Load"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 706.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 350.0
+    - Name: MaxHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:3.0000000"
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 84.0
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#e4e4e4"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/FactorySetting/Load"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0a5101"
+    - Name: MinHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:1.0000000"
 - Name: Vial_Rejection_s2_Navigation
   Id: g=c3b3a46325e68693d8ffd70eab9da14c
   Supertype: Panel
@@ -8593,6 +10265,22 @@ Children:
     - Name: Panels
       Type: BaseObjectType
       Children:
+      - Name: Panel3
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Vial_Rejection_S2_3"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel1
         Type: NavigationPanelItem
         Children:
@@ -8620,22 +10308,6 @@ Children:
           Type: NodePointer
           DataType: NodeId
           Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Vial_Rejection_S2_2"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel3
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Vial_Rejection_S2_3"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -9214,7 +10886,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable3"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -9249,8 +10921,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable3"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -9261,6 +10958,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable3"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: 2 for spare provision
     Type: ToggleButton
     Children:
@@ -9285,7 +11057,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable4"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -9320,13 +11092,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable4"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable4"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton3
     Type: ToggleButton
     Children:
@@ -9351,7 +11223,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable5"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -9386,13 +11258,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable5"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable5"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton4
     Type: ToggleButton
     Children:
@@ -9417,7 +11389,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable6"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -9452,13 +11424,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable6"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable6"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
 - Name: Vial_Rejection_S2_2
   Id: g=dc09232e648b3319ffcf66bcc0903850
   Supertype: Panel
@@ -9869,7 +11941,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable7"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -9904,8 +11976,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable7"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -9916,6 +12013,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable7"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: 2 for spare provision
     Type: ToggleButton
     Children:
@@ -9940,7 +12112,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable8"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -9975,13 +12147,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable8"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable8"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton3
     Type: ToggleButton
     Children:
@@ -10006,7 +12278,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable9"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -10041,13 +12313,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable9"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable9"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: ToggleButton4
     Type: ToggleButton
     Children:
@@ -10072,7 +12444,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable10"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -10107,13 +12479,113 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable10"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable10"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label6
     Type: Label
     Children:
@@ -10452,6 +12924,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -10492,6 +12975,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 100.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: rejection step full limit
     Type: TextBox
     Children:
@@ -10499,6 +12987,17 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/VialRejection/Variable2"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -10539,6 +13038,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 140.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: Label3
     Type: Label
     Children:
@@ -10800,7 +13304,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/NoVialAtInfeed"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -10830,8 +13334,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/NoVialAtInfeed"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -10852,6 +13381,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/NoVialAtInfeed"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label1
     Type: Label
     Children:
@@ -10939,7 +13543,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/DoorSensor"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -10969,8 +13573,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/DoorSensor"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -10991,6 +13620,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/DoorSensor"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label2
     Type: Label
     Children:
@@ -11078,7 +13782,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/NoTrayMachineShop"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -11108,8 +13812,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/NoTrayMachineShop"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -11130,6 +13859,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/NoTrayMachineShop"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label3
     Type: Label
     Children:
@@ -11217,7 +14021,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/FootSwtich"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -11247,8 +14051,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/FootSwtich"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -11269,6 +14098,81 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 510.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/FootSwtich"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Label4
     Type: Label
     Children:
@@ -11328,12 +14232,8 @@ Children:
       ModellingRule: Optional
       Value: 1
   - Name: 2ml to 30ml change part4
-    Type: ToggleButton
+    Type: Button
     Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -11351,7 +14251,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/RejectionSystem"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -11364,6 +14264,40 @@ Children:
           ReferenceType: HasParameter
           ModellingRule: Optional
           Value: {"LocaleId":"en-US","Text":"Disable"}
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#5dc3f6e9"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/RejectionSystem"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#1aeb00"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -11374,30 +14308,91 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 100.0
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 130.0
-    - Name: BackgroundColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#5dc3f6e9"
-    - Name: Style
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "Default"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 32.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_OptixPanel/Model/DataSetup/Station_2/SystemSetting/RejectionSystem"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: TopMargin
     Type: BaseVariableType
     DataType: Size

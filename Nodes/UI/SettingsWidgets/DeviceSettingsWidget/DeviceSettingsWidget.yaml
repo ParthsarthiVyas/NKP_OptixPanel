@@ -156,8 +156,10 @@ Children:
       Value: 0
     - Class: Reference
       Target: ns=5;i=1181
+      Direction: Forward
     - Class: Reference
       Target: ns=5;i=1183
+      Direction: Forward
   - Name: SystemNode
     Type: NodePointer
     DataType: NodeId
