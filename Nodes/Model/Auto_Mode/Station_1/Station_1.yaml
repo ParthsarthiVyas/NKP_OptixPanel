@@ -1,0 +1,155 @@
+Name: Station_1
+Type: FolderType
+Children:
+- Name: Start_button
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Stop_button
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Start_Stop_Indication
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Total_Count
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Vial_Minute
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Main_Motor
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 20.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: false
+- Name: Conveyor_Motor
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 50.0
+- Name: Spinning_Motor_1
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 50.0
+- Name: Spinning_Motor_2
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 50.0
+- Name: Vacuum_Pump
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 50.0
+- Name: Main_motor_status
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Conveyor_motor_status
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Spinning_Motor_1_status
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Spinning_Motor_2_status
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Vacuum_Pump_status
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable6
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -2408,6 +2408,11 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
 - Name: Vial_Rejection_s1_Navigation
   Id: g=df96da18174d47c64062b9dc85da7f27
   Supertype: Panel
@@ -8552,6 +8557,11 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
 - Name: Vial_Rejection_s2_Navigation
   Id: g=c3b3a46325e68693d8ffd70eab9da14c
   Supertype: Panel

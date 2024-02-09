@@ -1,2 +1,4 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- File: Auto_Mode/Auto_Mode.yaml
