@@ -1,0 +1,43 @@
+Name: Calibration
+Type: FolderType
+Children:
+- Name: S1_VP_Min
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S1_VP_PV
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S1_VP_Max
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S1_MM_Min
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S1_MM_Hz
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_VP_Min
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_VP_PV
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_VP_Max
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_MM_Min
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_MM_Hz
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
