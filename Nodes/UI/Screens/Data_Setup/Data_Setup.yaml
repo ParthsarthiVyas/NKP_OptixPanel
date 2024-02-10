@@ -2577,6 +2577,11 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
 - Name: Vial_Rejection_s1_Navigation
   Id: g=df96da18174d47c64062b9dc85da7f27
   Supertype: Panel
@@ -6983,8 +6988,10 @@ Children:
       Value: 3
     - Class: Reference
       Target: ns=5;i=1183
+      Direction: Forward
     - Class: Reference
       Target: ns=5;i=1181
+      Direction: Forward
 - Name: System_setup_S1_3
   Id: g=86e832ba42ba375810fa1243bb8217e8
   Supertype: Panel
@@ -10133,6 +10140,11 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
   - Name: MomentaryButton1
     Type: MomentaryButton
     Children:
