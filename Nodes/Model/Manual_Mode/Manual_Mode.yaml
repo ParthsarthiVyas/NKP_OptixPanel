@@ -1,0 +1,5 @@
+Name: Manual_Mode
+Type: FolderType
+Children:
+- File: Station1/Station1.yaml
+- File: Station2/Station2.yaml

@@ -338,7 +338,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Pressure_Setup_S1"
+              Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Timer_Setting_S1"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -7990,7 +7990,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Pressure_Setup_S2"
+              Value: "/Objects/NKP_OptixPanel/UI/Screens/Data_Setup/Timer_Setting_S2"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId

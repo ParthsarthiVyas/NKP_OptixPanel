@@ -147,6 +147,17 @@ Children:
     Children:
     - Name: Default
       Type: SwitchStyle
+    - Name: SwitchStyle1
+      Type: SwitchStyle
+      Children:
+      - Name: ActiveBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1aeb00"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#fc4848"
   - Name: GaugeStyles
     Type: BaseObjectType
     Children:

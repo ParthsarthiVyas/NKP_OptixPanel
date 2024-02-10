@@ -4,7 +4,7 @@ Children:
 - File: Welcome/Welcome.yaml
 - File: Main_Menu/Main_Menu.yaml
 - File: Automode/Automode.yaml
-- File: Manualmode/Manualmode.yaml
+- File: ManualMode/ManualMode.yaml
 - File: Alarm_History/Alarm_History.yaml
 - File: Calibration/Calibration.yaml
 - File: I_O_Screen_Station_1/I_O_Screen_Station_1.yaml

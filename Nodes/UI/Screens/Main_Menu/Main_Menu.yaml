@@ -1768,7 +1768,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                Value: "/Objects/NKP_OptixPanel/UI/Screens/Manualmode/Manual_mode"
+                Value: "/Objects/NKP_OptixPanel/UI/Screens/ManualMode/Manual_mode"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId

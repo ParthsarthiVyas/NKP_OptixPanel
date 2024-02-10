@@ -1108,6 +1108,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ff0000"
   - Name: Total_count_lab
     Type: Label
     Children:

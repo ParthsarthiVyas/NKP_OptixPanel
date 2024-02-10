@@ -2,6 +2,7 @@ Name: Model
 Type: ModelCategoryFolder
 Children:
 - File: Auto_Mode/Auto_Mode.yaml
+- File: Manual_Mode/Manual_Mode.yaml
 - File: Calibration/Calibration.yaml
 - File: I_O_Screen/I_O_Screen.yaml
 - File: DataSetup/DataSetup.yaml
